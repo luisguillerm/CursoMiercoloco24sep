@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Andrés Sanchez</title>
+  <style>
+    :root{
+      --bg-overlay: rgba(0,0,0,.45);
+      --text: #fff;
+      --muted: #ff0000;
+    }
+
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background:
+        linear-gradient(var(--bg-overlay),var(--bg-overlay)),
+        url("rockbg.avif") center/cover no-repeat fixed;
+    }
+
+    header{
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    header .brand{
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      overflow:hidden;
+      margin: 0 auto 20px;
+      border: 3px solid #ff0000;
+    }
+
+    header .brand img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+
+    header h1{
+      margin:0;
+      font-size: clamp(1.8rem, 1.4rem + 2vw, 2.6rem);
+    }
+
+    header h2{
+      margin:10px 0 0;
+      font-weight:500;
+      font-size: clamp(1rem, 0.9rem + .6vw, 1.3rem);
+      color: var(--muted);
+    }
+
+    main{
+      text-align:center;
+      padding: 20px;
+      font-size: 1.1rem;
+      line-height:1.6;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    footer{
+      text-align:center;
+      padding:16px;
+      color: var(--muted);
+      font-size: .9rem;
+      margin-top:40px;
+      background: rgba(0,0,0,0.6);
+    }
+
+    main{
+  text-align:center;
+  padding: 20px;
+  font-size: 1.1rem;
+  line-height:1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(0,0,0,0.5); /* aquí la magia */
+  border-radius: 12px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="logo.jpeg" alt="Logo o foto de Andres" />
+    </div>
+    <h1>Andrés Sanchez</h1>
+    <h2>Desarrollo y Gestión de Software Multiplataforma</h2>
+  </header>
+
+  <main>
+    <p>
+      Me gusta mucho la música en todas sus formas, desde relajarme escuchando mis canciones favoritas 
+      hasta descubrir nuevos géneros que me inspiran y me acompañan en diferentes momentos del día. 
+      La música es una parte importante de mi vida porque me motiva, me ayuda a concentrarme y también 
+      me permite desconectarme cuando lo necesito.
+    Además, disfruto de los pequeños placeres como salir a comer y, en especial, las hamburguesas de KFC, 
+    que son de mis favoritas. Me gusta compartir esos momentos con amigos o familia, ya que para mí la comida 
+    y la buena compañía siempre van de la mano.
+    </p>
+  </main>
+
+  <footer>
+    © <span id="y"></span> Andrés Sanchez
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
