@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Paulina Salas - Perfil</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .main-container {
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #424242;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .profile-img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-title {
+            color: #5e35b1;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Sobre mí</h1>
+        
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-md-5">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Paulina Salas</h5>
+                            <h6 class="card-subtitle mb-3 text-muted">Desarrollo de Software</h6>
+                            <hr>
+                            <p class="card-text mb-2">Me encantan los perros y la música</p>
+                            <p class="card-text">20 años</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-7 text-center">
+                    <img class="profile-img" src="https://cdn05.zipify.com/Tay4vjJlvXwCeCDgi4W_jeHurww=/fit-in/3840x0/504040786400472a9712f5c9d992cfa2/pot013-blog-hero-horizontal.jpeg" alt="Imagen de perro">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
